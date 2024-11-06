@@ -57,3 +57,19 @@ This framework can be a powerful tool for scientists in genomics, transcriptomic
   ```bash
   pip install -r requirements.txt   
 
+## Input Data Format
+
+The tool expects RNA-Seq data in CSV format with the following structure:
+
+- **First row**: Sample labels (including sex information)
+- **First column**: Gene/locus identifiers
+- **Remaining cells**: Expression values
+
+### Example format:
+
+| Gene          | Female | Female | Female | Female | Female | Female | Female | Female | Female | Female | Female | Male   | Male   | Male   | Male   |
+|---------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| LOC115694674  | 7.6376 | 7.8615 | 7.2720 | 8.4924 | 8.9980 | 7.2555 | 8.6678 | 7.4468 | 7.7121 | 8.6509 | 8.8774 | 7.4553 | 8.1364 | 7.6168 | 7.2609 |
+| LOC115694675  | 10.556 | 10.849 | 11.413 | 10.918 | 11.466 | 11.020 | 11.371 | 11.208 | 11.033 | 11.451 | 11.593 | 9.6768 | 10.985 | 11.117 | 10.578 |
+| LOC115694676  | 15.234 | 15.736 | 15.679 | 15.606 | 15.242 | 15.606 | 15.192 | 15.571 | 15.700 | 15.433 | 15.493 | 12.672 | 14.918 | 13.270 | 13.003 |
+| LOC115694677  | 8.7039 | 8.3329 | 8.4988 | 8.3064 | 7.8929 | 8.0965 | 8.1673 | 8.4813 | 8.5287 | 8.1604 | 8.0149 | 8.5180 | 8.2074 | 7.9480 | 8.2653 |
