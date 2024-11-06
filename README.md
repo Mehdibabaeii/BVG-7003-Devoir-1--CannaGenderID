@@ -58,7 +58,7 @@ This framework can be a powerful tool for scientists in genomics, transcriptomic
 
 2. **Install required packages**:
   ```bash
-  pip install -r requirements.txt   
+  !pip install numpy pandas matplotlib seaborn scikit-learn   
 
 
 
